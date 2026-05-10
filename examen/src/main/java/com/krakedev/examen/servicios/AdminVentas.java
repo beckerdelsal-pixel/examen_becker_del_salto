@@ -2,8 +2,10 @@ package com.krakedev.examen.servicios;
 
 import java.util.ArrayList;
 
-import com.krakedev.examen.entidades.Vendedor;
+import org.springframework.stereotype.Component;
 
+import com.krakedev.examen.entidades.Vendedor;
+@Component
 public class AdminVentas {
 	private ArrayList<Vendedor> vendedores = new ArrayList<>();
 
