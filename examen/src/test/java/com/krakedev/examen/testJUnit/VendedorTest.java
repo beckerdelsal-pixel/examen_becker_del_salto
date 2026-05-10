@@ -12,14 +12,14 @@ public class VendedorTest {
 
 	@Test
     public void testSueldoVendedor() {
-        Vendedor v = new Vendedor("1711");
+        Vendedor v = new Vendedor("1711","V");
         v.setSueldoFijo(500.0);
         assertEquals(500.0, v.calcularSueldo(), 0.0);
     }
 
     @Test
     public void testSueldoComision() {
-        VendedorComision vc = new VendedorComision("1722");
+        VendedorComision vc = new VendedorComision("1722","C");
         vc.setComisionPorVenta(10.0);
         vc.setNumeroVentas(5);
         assertEquals(50.0, vc.calcularSueldo(), 0.0);
@@ -27,7 +27,7 @@ public class VendedorTest {
 
     @Test
     public void testSueldoMixto() {
-        VendedorMixto vm = new VendedorMixto("1733");
+        VendedorMixto vm = new VendedorMixto("1733","M");
         vm.setSueldoFijo(1000.0);
         vm.setNumeroVentas(10);
         assertEquals(1100.0, vm.calcularSueldo(), 0.0);

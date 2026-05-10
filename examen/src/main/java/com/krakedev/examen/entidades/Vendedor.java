@@ -5,10 +5,12 @@ public class Vendedor {
     private int numeroVentas;
     private double sueldoFijo;
     private double comisionPorVenta;
+    private String tipo;
 
-    public Vendedor(String cedula) {
+    public Vendedor(String cedula,String tipo) {
         super();
         this.cedula = cedula;
+        this.tipo = tipo;
     }
 
     public String getCedula() {
@@ -42,6 +44,14 @@ public class Vendedor {
     public void setComisionPorVenta(double comisionPorVenta) {
         this.comisionPorVenta = comisionPorVenta;
     }
+    
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 
     public double calcularSueldo() {
         return sueldoFijo;
@@ -49,7 +59,7 @@ public class Vendedor {
 
     @Override
     public String toString() {
-        return "Vendedor [cedula=" + cedula + ", numeroVentas=" + numeroVentas + ", sueldoFijo=" + sueldoFijo
-                + ", comisionPorVenta=" + comisionPorVenta + "]";
+        return "Vendedor [cedula= " + cedula + ", numeroVentas= " + numeroVentas + ", sueldoFijo= " + sueldoFijo
+                + ", comisionPorVenta= " + comisionPorVenta + "Tipo= "+tipo+ "]";
     }
 }

@@ -10,14 +10,14 @@ public class TestAdmin {
 	public static void main(String[] args) {
 		AdminVentas admin = new AdminVentas();
 
-        Vendedor v = new Vendedor("111");
+        Vendedor v = new Vendedor("111","V");
         v.setSueldoFijo(500.0);
 
-        VendedorComision vc = new VendedorComision("222");
+        VendedorComision vc = new VendedorComision("222","V");
         vc.setComisionPorVenta(20.0);
         vc.setNumeroVentas(10);
 
-        VendedorMixto vm = new VendedorMixto("333");
+        VendedorMixto vm = new VendedorMixto("333","V");
         vm.setSueldoFijo(1000.0);
         vm.setNumeroVentas(5);
 

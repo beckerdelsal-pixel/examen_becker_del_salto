@@ -1,8 +1,8 @@
 package com.krakedev.examen.entidades;
 
 public class VendedorComision extends Vendedor {
-	public VendedorComision(String cedula) {
-        super(cedula);
+	public VendedorComision(String cedula, String tipo) {
+        super(cedula,tipo);
     }
 
     @Override

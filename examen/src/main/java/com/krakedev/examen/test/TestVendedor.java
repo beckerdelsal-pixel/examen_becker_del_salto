@@ -5,7 +5,7 @@ import com.krakedev.examen.entidades.Vendedor;
 public class TestVendedor {
 
 	public static void main(String[] args) {
-		Vendedor v1 = new Vendedor("0987654321");
+		Vendedor v1 = new Vendedor("0987654321","V");
         
         //Setear datos 
         v1.setSueldoFijo(500.0);
